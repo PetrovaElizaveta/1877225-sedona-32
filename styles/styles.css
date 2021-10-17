@@ -1,0 +1,41 @@
+.main-bg {
+    background-image: url("../img/index-bg-min.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
+}
+
+.icon-house {
+    background-image: url("../img/house.svg");
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 72px;
+}
+
+.icon-food {
+    background-image: url("../img/food.svg");
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 70px;
+}
+
+.icon-souvenirs {
+    background-image: url("../img/souvenirs.svg");
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 76px;
+}
+
+.footer-bg {
+    background-image: url("../img/footer-background-min.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 411px;
+}
+
+.inner-bg {
+    background-image: url("../img/footer-background-min.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 408px;
+}
