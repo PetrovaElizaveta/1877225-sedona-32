@@ -1,8 +1,114 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 1200px;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 25,88px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .white-link {
+      background-color: #756257;
+      color: white;
+  }
+
+  .main-index {
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
 .main-bg {
     background-image: url("../img/index-bg-min.jpg");
     background-repeat: no-repeat;
     width: 1200px;
     height: 485px;
+}
+
+.main-index-logo {
+    margin-top: 51px;
+    margin-left: 371px;
+}
+
+.promo {
+    margin-top: 63px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main_title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main_description{
+    font-size: 22px;
+    line-height: 36px;
+    margin-top: 23px;
+    margin-bottom: 79px;
+}
+
+.advantages-list {
+    text-align: center;
+    color: black;
+}
+
+.block-blue {
+    background-color: #83B3D3;
+    color: white;
+    width: 400px;
+    height: 384px;
+}
+
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 98px;
+}
+
+.detail-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.detail-item-blue {
+    background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
+}
+
+.detail-item-white {
+    background-color: white;
+    width: 400px;
+    height: 384px;
 }
 
 .icon-house {
@@ -26,16 +132,221 @@
     height: 76px;
 }
 
+.advantages-item-light {
+    background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
+}
+
+.advantages-item-dark {
+    background-color: rgba(131, 179, 211, 0.2);
+    width: 400px;
+    height: 384px;
+}
+
+.appointment {
+    margin-top: 91px;
+    margin-bottom: 91px;
+    text-align: center;
+}
+
+.appointment-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.appointment-description {
+    font-size: 22px;
+    line-height: 26px;
+    white-space: pre;
+    text-align: center;
+}
+
+.appointment-search {
+    width: 575px;
+    height: 60px;
+    background-color: #756257;
+    border-radius: 10px;
+}
+
+.appointment-button {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .footer-bg {
     background-image: url("../img/footer-background-min.jpg");
     background-repeat: no-repeat;
     width: 1200px;
     height: 411px;
+
+    text-align: center;
+    color: white;
+}
+
+.page-footer-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    padding-top: 94px;
+    text-transform: uppercase;
+}
+
+.page-footer-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.footer-contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: black
 }
 
 .inner-bg {
     background-image: url("../img/footer-background-min.jpg");
     background-repeat: no-repeat;
     width: 1200px;
-    height: 408px;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 77,64px;
+    font-weight: 700;
+    color: white;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 20,7px;
+    text-decoration: none;
+    color: white;
+}
+
+.catalog-products {
+    font-size: 18px;
+    line-height: 23,29px;
+    color: white;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 25,88px;
+    font-weight: 700;
+}
+
+.button-show {
+    font-size: 16px;
+    line-height: 20,7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+    background-color: #83B3D3;
+    width: 160px;
+    height: 48px;
+}
+
+.sorting-block {
+    padding-top: 50px;
+}
+
+.sorting-sum {
+    font-size: 30px;
+    line-height: 38,82px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-card {
+    line-height: 23,29px;
+}
+
+.product-card-link {
+    text-decoration: none;
+    color: black;
+}
+
+.product-card-title {
+    font-size: 24px;
+    line-height: 31,06px;
+    font-weight: 700;
+}
+
+.product-card-button {
+    font-size: 16px;
+    line-height: 20,07px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.more {
+    background-color: #756257;
+}
+
+.in-favorites {
+    background-color: #83B3D3;
+}
+
+.product-card-button.selected {
+    background-color: #7DB54F;
+}
+
+.rating {
+    background-color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+.pagination-show-more {
+    font-size: 20px;
+    line-height: 25,88px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: #83B3D3;
+    width: 625px;
+    height: 55px;
+}
+  
+  .pagination-link {
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25,88px;
+    font-weight: 700;
+  }
+  
+  .pagination-current {
+    color: black;
+    background-color: #F2F2F2;
+  }
+
+  .sorting-count {
+    line-height: 23,29px;
+  }
+
+  .newsletter.catalog {
+    text-align: center;
+}
+
+.page-footer-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.footer-contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: black
 }
