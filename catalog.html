@@ -45,6 +45,7 @@
     </header>
 
     <main class="main-inner">
+      <div class="page-container">
       <div class="inner-bg">
         <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -111,15 +112,15 @@
                   <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
-
                 </fieldset>
-
+                <div class="sorting-button">
                   <button class="button-show" type="submit" name="show">Применить</button>
                   <button class="button-delete" type="submit" name="delete">Сбросить</button>
+                </div>
             </form>
         </section>
       </div>
-
+      <div class="sorting">
         <form class="sorting-block">
             <label class="sorting-sum" for="sorting-1">Найдено гостиниц: 38</label>
             <select class="select-control" id="sorting-1" name="sorting">
@@ -138,7 +139,7 @@
         <a href="#" class="button">
           <span class="visually-hidden">Показать список</span>
         </a>
-
+      </div>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -218,6 +219,7 @@
                 <option value="10">10</option>
             </select>
         </form>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -228,7 +230,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="newsletter-email">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <input class="field-catalog"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             </p>
             <button class="button newsletter-button" type="submit">
               <span class="newsletter-button">Подписаться</span>
@@ -236,6 +238,7 @@
           </form>
         </section>
   
+        <div class="contacts">
         <div class="footer-social">
           <a class="button" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Twitter</span>
@@ -259,6 +262,7 @@
             <img src="img/html-academy.svg" alt="Сделано в html academy">
           </a>
         </section>
-      </footer>
-    </body>
+        </div>
+    </footer>
+  </body>
 </html>
