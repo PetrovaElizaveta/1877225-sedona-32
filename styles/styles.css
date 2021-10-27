@@ -14,7 +14,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -23,6 +31,18 @@ body {
     width: 1200px;
 }
 
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 412px;
+    margin: 0;
+    padding: 0;
+  }
+
 .navigation-link {
     font-size: 20px;
     line-height: 25,88px;
@@ -30,6 +50,15 @@ body {
     text-align: center;
     text-decoration: none;
     color: black;
+  }
+
+.navigation-user {
+    max-width: 268px;
+    margin-left: auto;
+}
+
+  .main-container {
+      flex-grow: 1;
   }
 
   .white-link {
@@ -74,6 +103,11 @@ body {
     margin-bottom: 79px;
 }
 
+.advantages {
+    margin: 0;
+    padding: 0;
+}
+
 .advantages-list {
     text-align: center;
     color: black;
@@ -84,6 +118,12 @@ body {
     color: white;
     width: 400px;
     height: 384px;
+    flex-wrap: nowrap;
+}
+
+.advantages-item {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .advantages-title {
@@ -91,6 +131,11 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     padding-top: 98px;
+}
+
+.detail-list {
+    display: flex;
+    flex-direction: row;
 }
 
 .detail-title {
@@ -105,10 +150,19 @@ body {
     height: 384px;
 }
 
+.detail {
+    padding-top: 89px;
+}
+
 .detail-item-white {
     background-color: white;
     width: 400px;
     height: 384px;
+}
+
+.detail-icon {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon-house {
@@ -116,6 +170,7 @@ body {
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
+    
 }
 
 .icon-food {
@@ -130,6 +185,16 @@ body {
     background-repeat: no-repeat;
     width: 64px;
     height: 76px;
+}
+
+.adv-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.other-adv {
+    display: flex;
+
 }
 
 .advantages-item-light {
@@ -148,6 +213,10 @@ body {
     margin-top: 91px;
     margin-bottom: 91px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .appointment-title {
@@ -203,6 +272,60 @@ body {
     line-height: 26px;
 }
 
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.field {
+    width: 600px;
+    height: 60px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.newsletter-button {
+    width: 200px;
+    height: 62px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #83B3D3;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.field-catalog, placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 22px;
+}
+
+.newsletter.catalog {
+    width: 1200px;
+    height: 450px;
+}
+
+.contacts {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.footer-social {
+    width: 110px;
+    margin-right: 61px;
+}
+
+.footer-contacts {
+    width: 720px;
+    text-align: center;
+}
+
 .footer-contacts-phone {
     font-size: 40px;
     line-height: 40px;
@@ -210,10 +333,22 @@ body {
     color: black
 }
 
+.about-text {
+    width: 115px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
 .inner-bg {
-    background-image: url("../img/footer-background-min.jpg");
+    background-image: url("../img/catalog-background-min.jpg");
     background-repeat: no-repeat;
     width: 1200px;
+    height: 408px;
 }
 
 .inner-header-title {
@@ -221,6 +356,7 @@ body {
     line-height: 77,64px;
     font-weight: 700;
     color: white;
+    width: 528px;
 }
 
 .breadcrumbs-link {
@@ -236,10 +372,22 @@ body {
     color: white;
 }
 
+.catalog-filter {
+    width: 1057px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+
 .catalog-filter-title {
     font-size: 20px;
     line-height: 25,88px;
     font-weight: 700;
+}
+
+.sorting-button {
+    display: flex;
+    flex-direction: column;
 }
 
 .button-show {
@@ -252,10 +400,20 @@ body {
     background-color: #83B3D3;
     width: 160px;
     height: 48px;
+    border: none;
+    border-radius: 4px;
 }
 
-.sorting-block {
-    padding-top: 50px;
+.button-delete {
+    width: 160px;
+    height: 23px;
+}
+
+.sorting {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 45px;
 }
 
 .sorting-sum {
@@ -349,4 +507,19 @@ body {
     line-height: 40px;
     text-decoration: none;
     color: black
+}
+
+.field-catalog {
+    width: 600px;
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

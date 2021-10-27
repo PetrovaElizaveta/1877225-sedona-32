@@ -44,7 +44,7 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index main-container">
       <div class="main-bg">
         <img class="main-index-logo" src="img\logo-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
       </div>
@@ -66,34 +66,41 @@
               для туристов, там течёт<br>
               своя жизнь</p>
             </div>
-
-            <img src="img\real-city-min.jpg" width="800" height="384" alt="Город Седона">
-
+          
+            <img class="city-img" src="img\real-city-min.jpg" width="800" height="384" alt="Город Седона">
+          </li>
               <ul class="detail-list">
-                <li class="detail-item-blue">
-                  <div class="icon-house"></div>
+                <li class="detail-item detail-item-blue">
+                  <div class="detail">
+                  <div class="detail-icon icon-house"></div>
+                  
                   <h4 class="detail-title">Жильё</h4>
                   <p class="detail-description">Рекомендуем пожить<br>
                     в настоящем мотеле,<br>
                     всё как в кино!</p>
+                  </div>
                 </li>
-                <li class="detail-item-white">
-                  <div class="icon-food"></div>
+                <li class="detail-item detail-item-white">
+                  <div class="detail">
+                  <div class="detail-icon icon-food"></div>
                   <h4 class="detail-title">Еда</h4>
                   <p class="detail-description">Всегда заказывайте<br>
                     топовый фирменный бургер,<br>
                     вы не разочаруетесь!</p>
+                  </div>
                 </li>
-                <li class="detail-item-blue">
-                  <div class="icon-souvenirs"></div>
+                <li class="detail-item detail-item-blue">
+                  <div class="detail">
+                  <div class="detail-icon icon-souvenirs"></div>
                   <h4 class="detail-title">Сувениры</h4>
                   <p class="detail-description">Не только китайского,<br>
                     но и настоящего местного<br>
                     производства!</p>
+                  </div>
                 </li>
               </ul>
-          </li>
-          <li class="advantages-item">
+          
+          <li class="adv-2 advantages-item">
             <div class="block-blue">
             <h3 class="advantages-title">Там есть<br>
               мост дьявола</h3>
@@ -103,8 +110,9 @@
               разумеется</p>
             </div>
 
-            <img src="img\bridge-min.jpg" width="800" height="384" alt="Мост Дьявола">
+            <img class="bridge" src="img\bridge-min.jpg" width="800" height="384" alt="Мост Дьявола">
           </li>
+          <div class="other-adv">
           <li class="advantages-item-light">
             <h3 class="advantages-title">Небольшая<br>
               площадь</h3>
@@ -126,6 +134,7 @@
             <p class="advantages-description">Большинство едет в Гранд<br>
               Каньон и толпится там</p>
           </li>
+          </div>
         </ol>
       </section>
 
@@ -147,19 +156,20 @@
         <p class="page-footer-description">Только полезная информация и никакого спама,<br>
           честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="email-form">
           <p class="newsletter-email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <div class="email-form">
             <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            </div>
           </p>
           <button class="button newsletter-button" type="submit">
             <span class="newsletter-button">Подписаться</span>
           </button>
-        </div>
+          </div>
         </form>
+        </div>
       </section>
 
+      <div class="contacts">
       <div class="footer-social">
         <a class="button" href="https://twitter.com/htmlacademy_ru">
           <span class="visually-hidden">Twitter</span>
@@ -183,6 +193,7 @@
           <img src="img/html-academy.svg" alt="Сделано в html academy">
         </a>
       </section>
+      </div>
     </footer>
   </body>
 </html>
