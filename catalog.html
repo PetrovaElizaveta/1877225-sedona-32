@@ -35,8 +35,8 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item button">
+            <a class="navigation-link button" href="#">
               <span class="navigation-link white-link">Хочу сюда!</span>
             </a>
           </li>
@@ -45,8 +45,8 @@
     </header>
 
     <main class="main-inner">
-      <div class="page-container">
       <div class="inner-bg">
+        <div class="page-container">
         <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -120,6 +120,7 @@
             </form>
         </section>
       </div>
+      </div>
       <div class="sorting">
         <form class="sorting-block">
             <label class="sorting-sum" for="sorting-1">Найдено гостиниц: 38</label>
@@ -130,15 +131,17 @@
             </select>
         </form>
 
-        <a href="#" class="button button-light">
+        <div class="view-type">
+        <a href="#" class="view-type-button button-light">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a href="#" class="button button-light">
+        <a href="#" class="view-type-button button-light">
             <span class="visually-hidden">Слайдшоу</span>
         </a>
-        <a href="#" class="button">
+        <a href="#" class="view-type-button button">
           <span class="visually-hidden">Показать список</span>
         </a>
+        </div>
       </div>
         <ul class="product-list">
           <li class="product-card">
@@ -190,7 +193,9 @@
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">Загрузить еще</button>
-        <ul class="pagination">
+
+        <div class="pagination">
+        <ul class="pagination-list">
             <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
             </li>
@@ -219,7 +224,8 @@
                 <option value="10">10</option>
             </select>
         </form>
-      </div>
+        </div>
+        </div>
     </main>
 
     <footer class="page-footer">
@@ -252,7 +258,7 @@
         </div>
   
         <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+          <h2 class="none">Контакты</h2>
           <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
   
