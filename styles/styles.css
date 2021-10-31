@@ -283,16 +283,6 @@ body {
     text-align: center;
 }
 
-.appointment-search {
-    width: 575px;
-    height: 60px;
-    background-color: #756257;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .appointment-button {
     font-size: 20px;
     line-height: 36px;
@@ -300,6 +290,15 @@ body {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+
+    display: flex;
+    box-sizing: border-box;
+    width: 575px;
+    height: 60px;
+    background-color: #756257;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-bg {
@@ -592,23 +591,39 @@ body {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
 }
 
 .more {
     background-color: #756257;
+    width: 151px;
+    height: 37px;
 }
 
 .in-favorites {
     background-color: #83B3D3;
+    width: 160px;
+    height: 37px;
 }
 
-.product-card-button.selected {
+.in-favorites.selected {
     background-color: #7DB54F;
 }
 
 .rating {
     background-color: #F2F2F2;
     text-transform: uppercase;
+    display: flex;
+    box-sizing: border-box;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
 }
 
 .pagination-show-more {
