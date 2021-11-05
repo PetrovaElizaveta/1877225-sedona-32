@@ -261,7 +261,7 @@ body {
 
 .appointment {
     margin-top: 91px;
-    margin-bottom: 91px;
+    margin-bottom: 0;
     text-align: center;
 
     display: flex;
@@ -274,6 +274,9 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .appointment-description {
@@ -281,6 +284,8 @@ body {
     line-height: 26px;
     white-space: pre;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 37px;
 }
 
 .appointment-button {
@@ -299,6 +304,8 @@ body {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 91px;
 }
 
 .footer-bg {
@@ -317,6 +324,7 @@ body {
     font-weight: 700;
     padding-top: 94px;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .page-footer-description {
@@ -328,7 +336,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .field {
@@ -336,6 +343,9 @@ body {
     height: 60px;
     border: none;
     border-radius: 10px 0px 0px 10px;
+    padding-left: 22px;
+
+    font-size: 18px;
 }
 
 .newsletter-button {
@@ -544,12 +554,15 @@ body {
     margin-right: 192px;
 }
 
-.select-control {
+.select-control-main {
     width: 280px;
     margin-right: 81px;
     height: 48px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
+    font-size: 18px;
+    line-height: 23,29px;
+    padding-left: 19px;
 }
 
 .view-type {
@@ -567,13 +580,55 @@ body {
     padding: 0;
     margin-left: 72px;
     margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card {
     line-height: 23,29px;
+    display: grid;
+    grid-template-columns: 180px 151px auto 160px;
+    grid-template-rows: 31px auto 37px;
+    max-height: 120px;
+    padding-bottom: 30px;
+    padding-top: 31px;
+    row-gap: 1px;
+    column-gap: 8px;
+
+    border-top: 1px solid #E6E6E6;
+}
+
+.product-card:last-child {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.product-card-img {
+   grid-column: 1 / 2;
+   grid-row: 1 / -1;
+   display: block;
+}
+
+.product-card-type {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-left: 29px;
+}
+
+.rating-stars {
+   grid-column: 4 / 5;
+   grid-row: 1;
+}
+
+.product-card-price {
+   grid-column: 3 / 4;
+   grid-row: 2 / 3;
 }
 
 .product-card-link {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
     text-decoration: none;
     color: black;
 }
@@ -582,6 +637,14 @@ body {
     font-size: 24px;
     line-height: 31,06px;
     font-weight: 700;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    margin: 0;
+    margin-left: 29px;
+}
+
+a.product-card-title {
+    margin: 0;
 }
 
 .product-card-button {
@@ -596,18 +659,24 @@ body {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
+    margin-left: 29px;
 }
 
 .more {
     background-color: #756257;
     width: 151px;
     height: 37px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }
+
 
 .in-favorites {
     background-color: #83B3D3;
     width: 160px;
     height: 37px;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
 }
 
 .in-favorites.selected {
@@ -624,6 +693,8 @@ body {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
+    grid-column: 4 / 5;
+    grid-row: 3;
 }
 
 .pagination-show-more {
@@ -635,11 +706,18 @@ body {
     background-color: #83B3D3;
     width: 625px;
     height: 55px;
-    margin-left: 288px;
     border: 0;
     border-radius: 4px;
-    margin-top: 31px;
-    margin-bottom: 30px;
+}
+
+.show-more {
+    display: flex;
+    width: 1056px;
+    min-height: 116px;
+    margin-left: 72px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .pagination {
@@ -653,6 +731,7 @@ body {
     padding: 0;
     width: 370px;
     margin-right: 302px;
+    margin-top: 31px;
 }
 
 .pagination-item {
@@ -690,12 +769,17 @@ body {
   }
 
   .select-control {
-      width: 140px;
+      width: 160px;
+      height: 48px;
+      font-size: 18px;
+      padding-left: 17px;
+      border: 2px solid #E6E6E6;
+      border-radius: 4px;
   }
 
   .sorting-count {
     line-height: 23,29px;
-    padding-right: 51px;
+    margin-right: 51px;
   }
 
   .newsletter.catalog {
