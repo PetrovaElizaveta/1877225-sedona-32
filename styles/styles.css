@@ -224,6 +224,7 @@ body {
 
 .promo {
     margin-top: 63px;
+    margin-bottom: 79px;
     text-decoration: none;
     text-align: center;
 }
@@ -233,13 +234,16 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 23px;
 }
 
 .main_description{
     font-size: 22px;
     line-height: 36px;
-    margin-top: 23px;
-    margin-bottom: 79px;
+}
+
+.advantages {
+    text-align: center;
 }
 
 .advantages-list {
@@ -248,6 +252,8 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .block-blue {
@@ -258,23 +264,10 @@ body {
     flex-wrap: nowrap;
 }
 
-.advantages-item {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.advantages-title {
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    padding-top: 98px;
-}
-
 .detail-list {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    
     margin: 0;
     padding: 0;
 }
@@ -292,7 +285,11 @@ body {
 }
 
 .detail {
-    padding-top: 89px;
+    margin-top: 89px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    text-align: center;
 }
 
 .detail-item-white {
@@ -331,11 +328,33 @@ body {
 .adv-2 {
     display: flex;
     flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
 }
+
 
 .other-adv {
     display: flex;
+    list-style-type: none;
+    padding: 0;
+}
 
+.advantages-item {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding:0;
+    margin-top: 98px;
+    margin-bottom: 25px;
+}
+
+.advantages-description {
+    margin-top: 26px;
 }
 
 .advantages-item-light {
@@ -447,13 +466,14 @@ body {
 }
 
 .field {
+    font-family: "PT Sans", sans-serif;
+    line-height: 26px;
+    font-size: 18px;
     width: 600px;
     height: 60px;
     border: none;
     border-radius: 10px 0px 0px 10px;
     padding-left: 22px;
-
-    font-size: 18px;
 }
 
 input[type="email"]:hover {
@@ -474,6 +494,7 @@ button.newsletter-button {
     border-radius: 0px 10px 10px 0px;
     background-color: #83B3D3;
     color: white;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -491,7 +512,13 @@ button.newsletter-button:focus {
     outline: none;
 }
 
-.field-catalog, placeholder {
+button.newsletter-button:active {
+    background-color: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+
+.field-catalog {
     font-size: 18px;
     line-height: 26px;
     padding-left: 22px;
