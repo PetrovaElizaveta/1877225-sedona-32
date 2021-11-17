@@ -208,14 +208,13 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   margin: 0;
-
   display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 160px;
   background-color: #756257;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
 }
 
 .navigation-link.button:hover .white-link {
