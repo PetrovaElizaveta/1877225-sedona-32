@@ -109,7 +109,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  top: 66px;
+  top: 62px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -212,8 +212,6 @@ body {
   display: flex;
   box-sizing: border-box;
   width: 160px;
-  padding-top: 9px;
-  padding-bottom: 10px;
   background-color: #756257;
   border-radius: 4px;
   justify-content: center;
