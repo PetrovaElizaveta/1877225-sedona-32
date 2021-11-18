@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="stylesheet" href="styles/styles.css">
-
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link current" href="#">Главная</a>
+          <li class="navigation-item current">
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <a class="navigation-logo" href="#">
@@ -106,9 +105,9 @@
         <img class="main-index-logo" src="img/logo-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
       </div>
       <div class="promo">
-      <h1 class="main_title">Седона — небольшой городок в Аризоне,<br>
+      <h1 class="main-title">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h1>
-      <p class="main_description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
 
       <section class="advantages">
@@ -195,7 +194,7 @@
       <section class="appointment">
         <h2 class="appointment-title">Заинтересовались?</h2>
         <p class="appointment-description">Укажите предполагаемые даты поездки,
-и мы покажем вам лучшие предложения гостиниц в Седоне
+        и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <div class="appointment-search">
           <a class="appointment-button" href="#">Поиск гостиницы в седоне</a>
@@ -215,9 +214,7 @@
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           </p>
-          <button class="button newsletter-button" type="submit">
-            <span class="newsletter-button">Подписаться</span>
-          </button>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
           </div>
         </form>
         </div>
@@ -312,9 +309,9 @@
               <button class="minus-button" type="button"></button>
               <button class="plus-button" type="button"></button>
             </p>
+            <button class="button modal-button" type="submit">Найти</button>
           </form>
           </div>
-          <button class="button modal-button" type="submit">Найти</button>
         </section>
       </div>
     </div>
